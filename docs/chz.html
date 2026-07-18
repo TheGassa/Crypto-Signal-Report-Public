@@ -102,15 +102,15 @@ footer b{color:#c2cad3}
   <header>
     <div class="asset">
       <h1><span class="sym">CHZ</span> Signal Report</h1>
-      <div class="price">Chiliz · $0.02 · generated 2026-07-18 17:07 UTC</div>
+      <div class="price">Chiliz · $0.02 · generated 2026-07-18 17:44 UTC</div>
     </div>
   </header>
 
   <div class="hero">
     <svg viewBox="0 0 200 130" class="gauge" role="img" aria-label="Composite score 16 of 100">
   <path d="M 10 100 A 90 90 0 0 1 190 100" fill="none" stroke="var(--track)" stroke-width="16" stroke-linecap="round"/>
-  <path d="M 10 100 A 90 90 0 0 1 21.19 56.54" fill="none" stroke="var(--bear)" stroke-width="16" stroke-linecap="round"/>
-  <circle cx="21.19" cy="56.54" r="7" fill="var(--bear)"/>
+  <path d="M 10 100 A 90 90 0 0 1 21.20 56.52" fill="none" stroke="var(--bear)" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="21.20" cy="56.52" r="7" fill="var(--bear)"/>
   <text x="100" y="92" text-anchor="middle" class="gauge-num" fill="var(--bear)">16</text>
   <text x="100" y="116" text-anchor="middle" class="gauge-sub">/ 100</text>
 </svg>
@@ -167,10 +167,10 @@ footer b{color:#c2cad3}
     <div class="card">
     <div class="card-title">Macro-Beta <span class="tag">new</span></div>
     <div class="kv"><span>Beta vs BTC</span><b>0.83</b></div>
-    <div class="kv"><span>R² (BTC-explained)</span><b>10%</b></div>
-    <div class="kv"><span>Alpha (window)</span><b>-56.54%</b></div>
+    <div class="kv"><span>R² (BTC-explained)</span><b>9%</b></div>
+    <div class="kv"><span>Alpha (window)</span><b>-56.58%</b></div>
     <div class="kv"><span>BTC correlation</span><b>0.31</b></div>
-    <p class="note">About <b>10%</b> of CHZ's daily moves are explained by BTC (β = 0.83). The asset-specific part (alpha) over the window is <b>-56.54%</b> — this is what the score reads.</p>
+    <p class="note">About <b>9%</b> of CHZ's daily moves are explained by BTC (β = 0.83). The asset-specific part (alpha) over the window is <b>-56.58%</b> — this is what the score reads.</p>
   </div>
     <div class="card card-unavail">
     <div class="card-title">Options-Implied Probability</div>
@@ -187,12 +187,12 @@ footer b{color:#c2cad3}
     </div>
     <div class="conf">
       <span>Confidence</span>
-      <div class="conf-track"><div class="conf-fill" style="width:60%"></div></div>
-      <b>60%</b>
+      <div class="conf-track"><div class="conf-fill" style="width:70%"></div></div>
+      <b>70%</b>
     </div>
-    <p class="llm-rationale">Composite score 16.04 (bearish). Market score 11.7 reflects price drops: 7d -9.43%, 30d -29.9%, ATH -98.2%. Fundamentals score 4.02 shows TVL -24.5% and fees -57.1% over 30d. Macro_beta score 0.0 with alpha -56.5% and low BTC correlation (0.31). Sentiment score 75 (Extreme Fear value 25) diverges by 71-75 points from other categories. Derivatives and options_iv unavailable; no 14d history.</p>
-    <p class="llm-keydiv"><b>Key divergence:</b> Sentiment score (75) strongly disagrees with macro_beta (0), fundamentals (4), and market (12) by 71-75 points</p>
-    <div class="llm-caveats"><span>Caveats</span><ul><li>Derivatives and options_iv data unavailable</li><li>No 14-day history provided</li><li>Sentiment &#x27;Extreme Fear&#x27; may be contrarian bullish signal</li></ul></div>
+    <p class="llm-rationale">Composite score 16.05 reflects severe bearishness: market 11.72 (price -9.4% 7d, -29.9% 30d), fundamentals 4.02 (TVL -24.5%, fees -57.1%), macro_beta 0.0 (alpha -56.6%, beta 0.83, R² 0.09). Sentiment category score 75 diverges sharply (delta 71 vs fundamentals, 75 vs macro_beta) but sentiment metric shows Extreme Fear (25).</p>
+    <p class="llm-keydiv"><b>Key divergence:</b> Sentiment category score (75) indicates bullishness while market (11.7), fundamentals (4.0), and macro_beta (0.0) are deeply bearish; sentiment metric shows Extreme Fear (25) contradicting its own category score.</p>
+    <div class="llm-caveats"><span>Caveats</span><ul><li>Derivatives and options IV data unavailable</li><li>Sentiment category score (75) contradicts its own metric (Extreme Fear, 25)</li><li>Macro beta R-squared only 0.095, low explanatory power</li><li>Only one historical data point limits trend analysis</li></ul></div>
     <div class="llm-model">model: nvidia/nemotron-3-ultra-550b-a55b:free</div>
   </section>
 
