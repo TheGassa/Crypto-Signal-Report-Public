@@ -102,22 +102,22 @@ footer b{color:#c2cad3}
   <header>
     <div class="asset">
       <h1><span class="sym">SOL</span> Signal Report</h1>
-      <div class="price">Solana · $74.88 · generated 2026-07-18 11:18 UTC</div>
+      <div class="price">Solana · $74.88 · generated 2026-07-18 11:47 UTC</div>
     </div>
   </header>
 
   <div class="hero">
-    <svg viewBox="0 0 200 130" class="gauge" role="img" aria-label="Composite score 56 of 100">
+    <svg viewBox="0 0 200 130" class="gauge" role="img" aria-label="Composite score 65 of 100">
   <path d="M 10 100 A 90 90 0 0 1 190 100" fill="none" stroke="var(--track)" stroke-width="16" stroke-linecap="round"/>
-  <path d="M 10 100 A 90 90 0 0 1 117.23 11.66" fill="none" stroke="var(--neutral)" stroke-width="16" stroke-linecap="round"/>
-  <circle cx="117.23" cy="11.66" r="7" fill="var(--neutral)"/>
-  <text x="100" y="92" text-anchor="middle" class="gauge-num" fill="var(--neutral)">56</text>
+  <path d="M 10 100 A 90 90 0 0 1 140.35 19.55" fill="none" stroke="var(--bull)" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="140.35" cy="19.55" r="7" fill="var(--bull)"/>
+  <text x="100" y="92" text-anchor="middle" class="gauge-num" fill="var(--bull)">65</text>
   <text x="100" y="116" text-anchor="middle" class="gauge-sub">/ 100</text>
 </svg>
     <div class="hero-meta">
-      <div class="verdict" style="color:var(--neutral)">Neutral</div>
-      <div class="subtle">Deterministic composite score across 4 available categories.</div>
-      <div class="subtle">Excluded from the score (no free data): Derivatives, Options-Implied. Weights are renormalized over available categories.</div>
+      <div class="verdict" style="color:var(--bull)">Bullish</div>
+      <div class="subtle">Deterministic composite score across 5 available categories.</div>
+      <div class="subtle">Excluded from the score (no free data): Options-Implied. Weights are renormalized over available categories.</div>
     </div>
   </div>
 
@@ -134,10 +134,10 @@ footer b{color:#c2cad3}
       <div class="bar-track"><div class="bar-fill" style="width:58.6%;background:var(--neutral)"></div></div>
       <div class="bar-val" style="color:var(--neutral)">59</div>
     </div>
-<div class="bar-row muted-row">
+<div class="bar-row">
       <div class="bar-label">Derivatives</div>
-      <div class="bar-track"><div class="bar-unavail">unavailable</div></div>
-      <div class="bar-val">n/a</div>
+      <div class="bar-track"><div class="bar-fill" style="width:95.2%;background:var(--bull)"></div></div>
+      <div class="bar-val" style="color:var(--bull)">95</div>
     </div>
 <div class="bar-row">
       <div class="bar-label">Macro-Beta</div>
@@ -154,7 +154,7 @@ footer b{color:#c2cad3}
       <div class="bar-track"><div class="bar-unavail">unavailable</div></div>
       <div class="bar-val">n/a</div>
     </div>
-      <div class="callout callout-ok">No significant divergences between categories.</div>
+      <div class="callout callout-warn"><strong>⚠ Divergences</strong><ul><li>derivatives (95) and market (44) disagree by 52 points</li></ul></div>
     </div>
     <div class="panel">
       <h2>History</h2>
@@ -168,9 +168,9 @@ footer b{color:#c2cad3}
     <div class="card-title">Macro-Beta <span class="tag">new</span></div>
     <div class="kv"><span>Beta vs BTC</span><b>1.22</b></div>
     <div class="kv"><span>R² (BTC-explained)</span><b>67%</b></div>
-    <div class="kv"><span>Alpha (window)</span><b>+6.79%</b></div>
+    <div class="kv"><span>Alpha (window)</span><b>+6.77%</b></div>
     <div class="kv"><span>BTC correlation</span><b>0.82</b></div>
-    <p class="note">About <b>67%</b> of SOL's daily moves are explained by BTC (β = 1.22). The asset-specific part (alpha) over the window is <b>+6.79%</b> — this is what the score reads.</p>
+    <p class="note">About <b>67%</b> of SOL's daily moves are explained by BTC (β = 1.22). The asset-specific part (alpha) over the window is <b>+6.77%</b> — this is what the score reads.</p>
   </div>
     <div class="card card-unavail">
     <div class="card-title">Options-Implied Probability</div>
@@ -190,9 +190,9 @@ footer b{color:#c2cad3}
       <div class="conf-track"><div class="conf-fill" style="width:45%"></div></div>
       <b>45%</b>
     </div>
-    <p class="llm-rationale">Composite 56.13 slightly above neutral but conflicts exist. Market score 43.51 reflects 7d price decline -2.74% and ATH distance -74.47%. Fundamentals 58.6 shows TVL flat (+0.18% 30d), fees down -5.6%, revenue up +1.38%. Macro beta 61.31 with beta 1.22, alpha +6.79%, BTC correlation 0.82. Sentiment score 75 contradicts &#x27;Extreme Fear&#x27; (value 25). Derivatives and options IV unavailable. History shows composite 53.89 to 56.13 with price stable ~74.85.</p>
-    <p class="llm-keydiv"><b>Key divergence:</b> Sentiment category score 75 (bullish) vs &#x27;Extreme Fear&#x27; classification (value 25); market score 43.5 bearish vs macro_beta 61.3 and sentiment 75 bullish</p>
-    <div class="llm-caveats"><span>Caveats</span><ul><li>Derivatives and options IV data unavailable</li><li>Only one historical data point in last 14 days</li><li>Sentiment score contradicts fear classification</li><li>Market score bearish while macro and sentiment bullish</li></ul></div>
+    <p class="llm-rationale">Composite score 64.8 suggests mild bullish tilt, but category scores conflict sharply: derivatives at 95.19 (driven by funding_rate_pct 0.005667%) vs market at 43.5 (price_change_7d_pct -2.73%, ath_distance_pct -74.47%). Fundamentals 58.6 (tvl_change_30d_pct +0.18%, fees_change_30d_pct -5.6%) and macro_beta 61.28 (beta 1.22, btc_correlation 0.82) are moderately positive. Sentiment 75.0 reflects &#x27;Extreme Fear&#x27; (value 25), a contrarian bullish signal. Options IV unavailable. Only one history point (composite 56.13 to 64.8) limits trend confidence.</p>
+    <p class="llm-keydiv"><b>Key divergence:</b> derivatives (95.19) vs market (43.5) disagree by 51.7 points</p>
+    <div class="llm-caveats"><span>Caveats</span><ul><li>derivatives score based solely on funding rate; other derivatives metrics unknown</li><li>market score reflects weak recent momentum and deep ATH drawdown</li><li>single history data point prevents trend analysis</li><li>options IV category unavailable</li></ul></div>
     <div class="llm-model">model: nvidia/nemotron-3-ultra-550b-a55b:free</div>
   </section>
 
