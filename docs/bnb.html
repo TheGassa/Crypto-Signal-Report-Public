@@ -102,21 +102,22 @@ footer b{color:#c2cad3}
   <header>
     <div class="asset">
       <h1><span class="sym">BNB</span> Signal Report</h1>
-      <div class="price">BNB · $564.56 · generated 2026-07-25 08:42 UTC</div>
+      <div class="price">BNB · $565.15 · generated 2026-07-25 10:25 UTC</div>
     </div>
   </header>
 
   <div class="hero">
     <svg viewBox="0 0 200 130" class="gauge" role="img" aria-label="Composite score 49 of 100">
   <path d="M 10 100 A 90 90 0 0 1 190 100" fill="none" stroke="var(--track)" stroke-width="16" stroke-linecap="round"/>
-  <path d="M 10 100 A 90 90 0 0 1 97.57 10.03" fill="none" stroke="var(--neutral)" stroke-width="16" stroke-linecap="round"/>
-  <circle cx="97.57" cy="10.03" r="7" fill="var(--neutral)"/>
+  <path d="M 10 100 A 90 90 0 0 1 97.20 10.04" fill="none" stroke="var(--neutral)" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="97.20" cy="10.04" r="7" fill="var(--neutral)"/>
   <text x="100" y="92" text-anchor="middle" class="gauge-num" fill="var(--neutral)">49</text>
   <text x="100" y="116" text-anchor="middle" class="gauge-sub">/ 100</text>
 </svg>
     <div class="hero-meta">
       <div class="verdict" style="color:var(--neutral)">Neutral</div>
-      <div class="subtle">Deterministic composite score across 5 available categories.</div>
+      <div class="subtle">Deterministic composite score across 4 weighted categories.</div>
+      <div class="subtle">Market backdrop: <b style="color:var(--bull)">favorable</b> (73/100) — market-wide, identical for every asset, and deliberately kept out of the composite so it can't tilt the ranking.</div>
       <div class="subtle">Excluded from the score (no free data): Options-Implied. Weights are renormalized over available categories.</div>
     </div>
   </div>
@@ -126,26 +127,26 @@ footer b{color:#c2cad3}
       <h2>Category Breakdown</h2>
       <div class="bar-row">
       <div class="bar-label">Market / Technical</div>
-      <div class="bar-track"><div class="bar-fill" style="width:43.9%;background:var(--neutral)"></div></div>
+      <div class="bar-track"><div class="bar-fill" style="width:44.0%;background:var(--neutral)"></div></div>
       <div class="bar-val" style="color:var(--neutral)">44</div>
     </div>
 <div class="bar-row">
       <div class="bar-label">Fundamentals</div>
       <div class="bar-track"><div class="bar-fill" style="width:29.5%;background:var(--bear)"></div></div>
-      <div class="bar-val" style="color:var(--bear)">30</div>
+      <div class="bar-val" style="color:var(--bear)">29</div>
     </div>
 <div class="bar-row">
       <div class="bar-label">Derivatives</div>
-      <div class="bar-track"><div class="bar-fill" style="width:55.6%;background:var(--neutral)"></div></div>
-      <div class="bar-val" style="color:var(--neutral)">56</div>
+      <div class="bar-track"><div class="bar-fill" style="width:66.7%;background:var(--bull)"></div></div>
+      <div class="bar-val" style="color:var(--bull)">67</div>
     </div>
 <div class="bar-row">
       <div class="bar-label">Macro-Beta</div>
-      <div class="bar-track"><div class="bar-fill" style="width:59.6%;background:var(--neutral)"></div></div>
+      <div class="bar-track"><div class="bar-fill" style="width:59.8%;background:var(--neutral)"></div></div>
       <div class="bar-val" style="color:var(--neutral)">60</div>
     </div>
 <div class="bar-row">
-      <div class="bar-label">Sentiment</div>
+      <div class="bar-label">Sentiment <span class="tag">market-wide</span></div>
       <div class="bar-track"><div class="bar-fill" style="width:73.0%;background:var(--bull)"></div></div>
       <div class="bar-val" style="color:var(--bull)">73</div>
     </div>
@@ -159,8 +160,8 @@ footer b{color:#c2cad3}
     <div class="panel">
       <h2>History</h2>
       <svg viewBox="0 0 320 60" class="spark" preserveAspectRatio="none">
-  <polyline points="0.0,0.0 53.3,11.8 106.7,60.0 160.0,14.0 213.3,9.8 266.7,50.1 320.0,13.0" fill="none" stroke="var(--neutral)" stroke-width="2"/>
-  <circle cx="320.0" cy="13.0" r="2.5" fill="var(--neutral)"/>
+  <polyline points="0.0,0.0 53.3,11.8 106.7,60.0 160.0,14.0 213.3,9.8 266.7,50.1 320.0,13.6" fill="none" stroke="var(--neutral)" stroke-width="2"/>
+  <circle cx="320.0" cy="13.6" r="2.5" fill="var(--neutral)"/>
 </svg>
 <div class="spark-meta">7 days · 52 → 49</div>
       <div class="calib"><div class="calib-title">Track record</div><div class="empty">Calibration needs ≥ 20 snapshots with a realized 7-day outcome — <b>2/20</b> so far. Hit rate and Brier score appear here once enough history accrues.</div></div>
@@ -172,9 +173,10 @@ footer b{color:#c2cad3}
     <div class="card-title">Macro-Beta <span class="tag">new</span></div>
     <div class="kv"><span>Beta vs BTC</span><b>0.85</b></div>
     <div class="kv"><span>R² (BTC-explained)</span><b>51%</b></div>
-    <div class="kv"><span>Alpha (window)</span><b>+5.77%</b></div>
+    <div class="kv"><span>Alpha (window)</span><b>+5.84%</b></div>
+    <div class="kv"><span>Alpha t-stat (scored)</span><b>0.40</b></div>
     <div class="kv"><span>BTC correlation</span><b>0.72</b></div>
-    <p class="note">About <b>51%</b> of BNB's daily moves are explained by BTC (β = 0.85). The asset-specific part (alpha) over the window is <b>+5.77%</b> — this is what the score reads.</p>
+    <p class="note">About <b>51%</b> of BNB's daily moves are explained by BTC (β = 0.85). The asset-specific part (alpha) over the window is <b>+5.84%</b>. The score reads alpha's <b>t-statistic (0.40)</b> — alpha divided by its own noise — so a large but erratic alpha counts for less than a smaller, steadier one.</p>
   </div>
     <div class="card card-unavail">
     <div class="card-title">Options-Implied Probability</div>
@@ -194,9 +196,9 @@ footer b{color:#c2cad3}
       <div class="conf-track"><div class="conf-fill" style="width:35%"></div></div>
       <b>35%</b>
     </div>
-    <p class="llm-rationale">Composite score 49.14 is near neutral. Fundamentals score 29.5 reflects fees_change_30d_pct -22.65% and revenue_change_30d_pct -22.65%. Sentiment score 73.0 diverges 43.5 points from fundamentals despite sentiment.value 27 (Fear). Derivatives funding_rate_pct 0.05% slightly positive. Macro beta alpha_window_pct 5.77% shows outperformance. Market price_change_7d_pct -1.0% and ath_distance_pct -58.79% indicate downtrend. Divergence and mixed signals warrant neutral.</p>
-    <p class="llm-keydiv"><b>Key divergence:</b> Fundamentals (29.5) and sentiment (73.0) disagree by 43.5 points, with fundamentals showing declining fees/revenue (-22.6% 30d) while sentiment score is elevated despite &#x27;Fear&#x27; classification (value 27).</p>
-    <div class="llm-caveats"><span>Caveats</span><ul><li>options_iv unavailable</li><li>sentiment classification &#x27;Fear&#x27; contradicts high sentiment score</li><li>short 6-day history</li><li>high mcap_tvl 15.63 suggests overvaluation</li></ul></div>
+    <p class="llm-rationale">Composite score 49.01 is neutral. Fundamentals weak at 29.48 (TVL -3.6% 30d, fees/revenue -22.6%), market 44.02 (price -0.9% 7d), but derivatives 66.67 (funding +0.04%) and macro_beta 59.8 (beta 0.85, alpha +5.8% t-stat 0.40) lean bullish. Sentiment 73 reflects market-wide Fear (contrarian favorable), not asset-specific. Divergence flag: fundamentals vs sentiment delta 43.5. Price 58.7% below ATH.</p>
+    <p class="llm-keydiv"><b>Key divergence:</b> fundamentals (29.48) vs sentiment (73.0) divergence of 43.5 points (market-wide sentiment)</p>
+    <div class="llm-caveats"><span>Caveats</span><ul><li>options_iv unavailable</li><li>sentiment is market-wide Fear &amp; Greed index</li><li>composite score near neutral with high recent volatility</li><li>alpha not statistically significant (t-stat 0.40)</li></ul></div>
     <div class="llm-model">model: nvidia/nemotron-3-ultra-550b-a55b:free</div>
   </section>
 
