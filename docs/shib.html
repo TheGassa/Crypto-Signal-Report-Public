@@ -8,7 +8,7 @@
 :root{
   --bg:#0b0e11; --panel:#151a21; --panel2:#1c232c; --track:#2a323d;
   --text:#eaecef; --muted:#848e9c; --line:#252d38;
-  --bull:#0ecb81; --bear:#f6465d; --neutral:#f0b90b;
+  --bull:#0ecb81; --bear:#f6465d; --neutral:#f0b90b; --warn:#f5a3ad;
   --accent:#a78bfa; --accent-dim:#2a2440;
 }
 *{box-sizing:border-box}
@@ -102,21 +102,21 @@ footer b{color:#c2cad3}
   <header>
     <div class="asset">
       <h1><span class="sym">SHIB</span> Signal Report</h1>
-      <div class="price">Shiba Inu · $0.00 · generated 2026-07-31 17:06 UTC</div>
+      <div class="price">Shiba Inu · $0.00 · generated 2026-07-31 19:36 UTC</div>
     </div>
   </header>
 
   <div class="hero">
-    <svg viewBox="0 0 200 130" class="gauge" role="img" aria-label="Composite score 61 of 100">
+    <svg viewBox="0 0 200 130" class="gauge" role="img" aria-label="Composite score 61 of 100 (conflicted — categories disagree sharply)">
   <path d="M 10 100 A 90 90 0 0 1 190 100" fill="none" stroke="var(--track)" stroke-width="16" stroke-linecap="round"/>
-  <path d="M 10 100 A 90 90 0 0 1 129.21 14.87" fill="none" stroke="var(--bull)" stroke-width="16" stroke-linecap="round"/>
-  <circle cx="129.21" cy="14.87" r="7" fill="var(--bull)"/>
-  <text x="100" y="92" text-anchor="middle" class="gauge-num" fill="var(--bull)">61</text>
+  <path d="M 10 100 A 90 90 0 0 1 130.30 15.25" fill="none" stroke="var(--warn)" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="130.30" cy="15.25" r="7" fill="var(--warn)"/>
+  <text x="100" y="92" text-anchor="middle" class="gauge-num" fill="var(--warn)">61</text>
   <text x="100" y="116" text-anchor="middle" class="gauge-sub">/ 100</text>
 </svg>
     <div class="hero-meta">
-      <div class="verdict" style="color:var(--bull)">Bullish</div>
-      <div class="subtle">Deterministic composite score across 2 weighted categories, each weight scaled by that category's data-completeness confidence.</div>
+      <div class="verdict" style="color:var(--warn)">Conflicted</div>
+      <div class="subtle">Deterministic composite score across 4 weighted categories, each weight scaled by that category's data-completeness confidence.</div>
       <div class="subtle">Market backdrop: <b style="color:var(--bull)">favorable</b> (75/100) — market-wide, identical for every asset, and deliberately kept out of the composite so it can't tilt the ranking.</div>
       <div class="subtle">Excluded from the score (no free data): Fundamentals, Derivatives, Options-Implied. Weights are renormalized over available categories.</div>
     </div>
@@ -126,9 +126,19 @@ footer b{color:#c2cad3}
     <div class="panel">
       <h2>Category Breakdown</h2>
       <div class="bar-row">
-      <div class="bar-label">Market / Technical</div>
-      <div class="bar-track"><div class="bar-fill" style="width:70.9%;background:var(--bull)"></div></div>
-      <div class="bar-val" style="color:var(--bull)">71</div>
+      <div class="bar-label">Trend</div>
+      <div class="bar-track"><div class="bar-fill" style="width:54.4%;background:var(--neutral)"></div></div>
+      <div class="bar-val" style="color:var(--neutral)">54</div>
+    </div>
+<div class="bar-row">
+      <div class="bar-label">Momentum</div>
+      <div class="bar-track"><div class="bar-fill" style="width:78.6%;background:var(--bull)"></div></div>
+      <div class="bar-val" style="color:var(--bull)">79</div>
+    </div>
+<div class="bar-row">
+      <div class="bar-label">Volume</div>
+      <div class="bar-track"><div class="bar-fill" style="width:100.0%;background:var(--bull)"></div></div>
+      <div class="bar-val" style="color:var(--bull)">100</div>
     </div>
 <div class="bar-row muted-row">
       <div class="bar-label">Fundamentals</div>
@@ -142,7 +152,7 @@ footer b{color:#c2cad3}
     </div>
 <div class="bar-row">
       <div class="bar-label">Macro-Beta</div>
-      <div class="bar-track"><div class="bar-fill" style="width:43.2%;background:var(--neutral)"></div></div>
+      <div class="bar-track"><div class="bar-fill" style="width:43.1%;background:var(--neutral)"></div></div>
       <div class="bar-val" style="color:var(--neutral)">43</div>
     </div>
 <div class="bar-row">
@@ -155,13 +165,14 @@ footer b{color:#c2cad3}
       <div class="bar-track"><div class="bar-unavail">unavailable</div></div>
       <div class="bar-val">n/a</div>
     </div>
-      <div class="callout callout-ok">No significant divergences between categories.</div>
+      <div class="callout callout-warn"><strong>⚠ Divergences</strong><ul><li>macro_beta (43) and volume (100) disagree by 57 points</li><li>trend (54) and volume (100) disagree by 46 points</li></ul><p>This is why the headline verdict above reads <b>Conflicted</b> instead of a directional call.</p></div>
+      <div class="callout callout-warn"><strong>⚠ Volatility: Extreme</strong><p>realized volatility 5.1%/day, 98th percentile of its own trailing history. A volatility expansion spike like this is an unfavorable window for new entries, regardless of the composite score above.</p></div>
     </div>
     <div class="panel">
       <h2>History</h2>
       <svg viewBox="0 0 320 60" class="spark" preserveAspectRatio="none">
-  <polyline points="0.0,56.7 26.7,53.9 53.3,50.0 80.0,54.1 106.7,53.3 133.3,52.0 160.0,60.0 186.7,0.0 213.3,11.9 240.0,28.2 266.7,29.2 293.3,24.1 320.0,19.7" fill="none" stroke="var(--bull)" stroke-width="2"/>
-  <circle cx="320.0" cy="19.7" r="2.5" fill="var(--bull)"/>
+  <polyline points="0.0,56.7 26.7,53.9 53.3,50.0 80.0,54.1 106.7,53.3 133.3,52.0 160.0,60.0 186.7,0.0 213.3,11.9 240.0,28.2 266.7,29.2 293.3,24.1 320.0,19.1" fill="none" stroke="var(--bull)" stroke-width="2"/>
+  <circle cx="320.0" cy="19.1" r="2.5" fill="var(--bull)"/>
 </svg>
 <div class="spark-meta">13 days · 35 → 61</div>
       <div class="calib"><div class="calib-title">Track record</div><div class="empty">Calibration needs ≥ 20 snapshots with a realized 7-day outcome — <b>4/20</b> so far. Hit rate and Brier score appear here once enough history accrues.</div></div>
@@ -173,10 +184,10 @@ footer b{color:#c2cad3}
     <div class="card-title">Macro-Beta <span class="tag">new</span></div>
     <div class="kv"><span>Beta vs BTC</span><b>0.99</b></div>
     <div class="kv"><span>R² (BTC-explained)</span><b>34%</b></div>
-    <div class="kv"><span>Alpha (window)</span><b>-6.38%</b></div>
-    <div class="kv"><span>Alpha t-stat (scored)</span><b>-0.27</b></div>
+    <div class="kv"><span>Alpha (window)</span><b>-6.41%</b></div>
+    <div class="kv"><span>Alpha t-stat (scored)</span><b>-0.28</b></div>
     <div class="kv"><span>BTC correlation</span><b>0.58</b></div>
-    <p class="note">About <b>34%</b> of SHIB's daily moves are explained by BTC (β = 0.99). The asset-specific part (alpha) over the window is <b>-6.38%</b>. The score reads alpha's <b>t-statistic (-0.27)</b> — alpha divided by its own noise — so a large but erratic alpha counts for less than a smaller, steadier one.</p>
+    <p class="note">About <b>34%</b> of SHIB's daily moves are explained by BTC (β = 0.99). The asset-specific part (alpha) over the window is <b>-6.41%</b>. The score reads alpha's <b>t-statistic (-0.28)</b> — alpha divided by its own noise — so a large but erratic alpha counts for less than a smaller, steadier one.</p>
   </div>
     <div class="card card-unavail">
     <div class="card-title">Options-Implied Probability</div>
@@ -185,10 +196,21 @@ footer b{color:#c2cad3}
   </div>
   </div>
 
-  <section class="llm-read llm-unavail">
+  <section class="llm-read">
     <div class="llm-label">AI reasoning layer — interprets the numbers above; not part of the composite</div>
-    <div class="llm-head"><h2>Directional Read</h2><span class="llm-status">unavailable (invalid)</span></div>
-    <p class="note">response was not parseable JSON<br>The deterministic composite score above stands on its own.</p>
+    <div class="llm-head">
+      <h2>Directional Read</h2>
+      <span class="dir-badge dir-bull">BULLISH</span>
+    </div>
+    <div class="conf">
+      <span>Confidence</span>
+      <div class="conf-track"><div class="conf-fill" style="width:55%"></div></div>
+      <b>55%</b>
+    </div>
+    <p class="llm-rationale">Composite score 60.93 (&gt;50) driven by strong momentum (78.57) and max volume (100.0), but trend only modest (54.42) and macro_beta bearish (43.15). Price up 14.4% 7d and 12.9% 30d, yet macro_beta shows negative alpha (-6.41%) vs BTC with low R² (0.34). Volume surge (100) diverges from macro_beta (43) by 57 points and trend (54) by 46 points, suggesting volume spike unconfirmed by trend or risk-adjusted performance. History shows composite spiked to 74.22 on 2026-07-26 with price jump to 5.43e-06 then retreated to 60.52 at 4.72e-06.</p>
+    <p class="llm-keydiv"><b>Key divergence:</b> macro_beta (43) vs volume (100) delta 57 points</p>
+    <div class="llm-caveats"><span>Caveats</span><ul><li>Sentiment score (75) is market-wide Fear &amp; Greed, not asset-specific</li><li>Fundamentals, derivatives, options_iv categories unavailable</li><li>Volume score may reflect transient spike rather than sustained interest</li><li>Macro_beta indicates SHIB underperformed BTC on risk-adjusted basis</li></ul></div>
+    <div class="llm-model">model: nvidia/nemotron-3-ultra-550b-a55b:free</div>
   </section>
 
   <footer>
